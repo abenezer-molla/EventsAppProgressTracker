@@ -153,6 +153,56 @@ Tiktok
    | Location Name        | String|  Name of the location from the list of locations in SF|
    | Location Adress       | String   | Adress of the Location name displayed |
    | Image to be pinned     | File | the image we want to upload and pin in the map |
+   
+   
+   
+   ### Networking
+#### List of network requests by screen
+   - Home Feed Screen
+      - (Read/GET) Query all posts where user is author
+         ```
+         
+             - (void)refreshData{
+
+                 Post *newPost = [Post new];
+
+                 // get the current user and assign it to "author" field. "author" field is now of Pointer type
+                 newPost.author = [PFUser currentUser];
+
+                 // construct query
+                 PFQuery *postQuery = [Post query];
+                 [postQuery orderByDescending:@"createdAt"];
+                 [postQuery includeKey:@"author"];
+                 postQuery.limit = 20;
+
+                 // fetch data asynchronously
+                 [self.tableView reloadData];
+                 [postQuery findObjectsInBackgroundWithBlock:^(NSArray<Post *> * _Nullable posts, NSError * _Nullable error) {
+                     if (posts) {
+                         // do something with the data fetched
+                                     self.feeds = posts;
+                                     [self.tableView reloadData];
+                                     [self.refreshControl endRefreshing];
+                     }
+                     else {
+                         // handle error
+
+                                     NSLog(@"%@", error.localizedDescription);
+                     }
+                 }];
+                 [self.tableView reloadData];
+
+             }
+         ```
+      - (Create/POST) Create a new like on a post
+      - (Delete) Delete existing like
+      - (Create/POST) Create a new comment on a post
+      - (Delete) Delete existing comment
+   - Create Post Screen
+      - (Create/POST) Create a new post object
+   - Profile Screen (Optional feature) --> I am hoping to add this 4th tab as optinal feature to indicate the profile page of the currentUser(logged-in user)
+      - (Read/GET) Query logged in user object
+      - (Update/PUT) Update user profile image
 
    
    

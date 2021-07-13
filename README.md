@@ -116,6 +116,8 @@ Tiktok
 
 ![photo_2021-07-12 08 30 37](https://user-images.githubusercontent.com/57775399/125314991-8f0b3380-e2eb-11eb-8ae3-782ec7d11a2b.jpeg)
 ![photo_2021-07-12 08 30 45](https://user-images.githubusercontent.com/57775399/125315024-94687e00-e2eb-11eb-8d48-bd8dee1705aa.jpeg)
+![Screen Shot 2021-07-13 at 9 52 49 AM](https://user-images.githubusercontent.com/57775399/125494034-f76e048e-a86d-4390-bce7-3d16d50e998c.jpeg)
+
 
 
 ## Schema 

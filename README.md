@@ -215,6 +215,22 @@ Tiktok
       - (Create/POST) Create a new USER(Register)
       - (Read/Get) Query username and password to match with the one logged in by the user!
 
+
+
+
+
+
+#### Existing API Endpoints
+
+- Base URL - [https://api.twitter.co]("https://api.twitter.com")
+
+   HTTP Verb | Endpoint | Description
+   ----------|----------|------------
+    `POST`    | /favorites/create | favorites the post by the user.
+    `POST`    | /favorites/destroy| Unfavorites the post by the user.
+
+
+
    
    
 

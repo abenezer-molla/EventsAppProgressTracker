@@ -146,7 +146,7 @@ Tiktok
    | updatedAt     | DateTime | date when post is last updated (default field) |
    | username       | String   | username of the current user |
    
-#### Post for Chat Page
+#### Post for Photo-Map-Pin Page
 
    | Property      | Type     | Description |
    | ------------- | -------- | ------------|

@@ -196,13 +196,16 @@ Tiktok
          ```
       - (Create/POST) Create a new like on a post
       - (Delete) Delete existing like
-      - (Create/POST) Create a new comment on a post
-      - (Delete) Delete existing comment
+      - (Create/POST) Create a new comment on a post (Optional Feature because we have a Chat Tab for discussion and this feature might be reptitive)
+      - (Delete) Delete existing comment (Optional Feature)
    - Create Post Screen
       - (Create/POST) Create a new post object
-   - Profile Screen (Optional feature) --> I am hoping to add this 4th tab as optinal feature to indicate the profile page of the currentUser(logged-in user)
+   - Profile Screen (Optional feature) --> I am hoping to add this 4th tab as optional feature to indicate the profile page of the currentUser(logged-in user)
       - (Read/GET) Query logged in user object
       - (Update/PUT) Update user profile image
+
+   - Group Chat Screen
+      - (Create/POST) Create a new post object
 
    
    

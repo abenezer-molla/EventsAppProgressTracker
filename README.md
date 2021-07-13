@@ -209,6 +209,12 @@ Tiktok
    - Group Chat Screen
       - (Create/POST) Create a new post object
 
+
+
+   - LOGIN Screen
+      - (Create/POST) Create a new USER(Register)
+      - (Read/Get) Query username and password to match with the one logged in by the user!
+
    
    
 

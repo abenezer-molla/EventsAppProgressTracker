@@ -118,4 +118,47 @@ Tiktok
 ![photo_2021-07-12 08 30 45](https://user-images.githubusercontent.com/57775399/125315024-94687e00-e2eb-11eb-8d48-bd8dee1705aa.jpeg)
 
 
+## Schema 
+### Models
+#### Post for Feed Page
+
+   | Property      | Type     | Description |
+   | ------------- | -------- | ------------|
+   | objectId      | String   | unique id for the user post (default field) |
+   | author        | Pointer to User| image author |
+   | image         | File     | image that user posts |
+   | caption       | String   | image caption by author |
+   | commentsCount | Number   | number of comments that has been posted to an image |
+   | likesCount    | Number   | number of likes for the post |
+   | createdAt     | DateTime | date when post is created (default field) |
+   | updatedAt     | DateTime | date when post is last updated (default field) |
+   | username       | String   | username of the current user |
+
+
+#### Post for Chat Page
+
+   | Property      | Type     | Description |
+   | ------------- | -------- | ------------|
+   | objectId(optional)      | String   | unique id for the user post (default field) |
+   | author        | Pointer to User| image author |
+   | chatContent       | String   | string caption by author |
+   | createdAt     | DateTime | date when post is created (default field) |
+   | updatedAt     | DateTime | date when post is last updated (default field) |
+   | username       | String   | username of the current user |
+   
+#### Post for Chat Page
+
+   | Property      | Type     | Description |
+   | ------------- | -------- | ------------|
+   | Location Name        | String|  Name of the location from the list of locations in SF|
+   | Location Adress       | String   | Adress of the Location name displayed |
+   | Image to be pinned     | File | the image we want to upload and pin in the map |
+
+   
+   
+
+
+   
+
+
 
